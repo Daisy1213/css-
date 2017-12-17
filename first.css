@@ -1,0 +1,296 @@
+
+
+html {
+//去掉黑色遮罩
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-size-adjust: 100%;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+body,
+p,
+dl,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+a,
+a:hover {
+    color: $colorLinkHover;
+    text-decoration: none;
+}
+
+a:focus,
+img:focus,
+input:focus,
+button:focus,
+select:focus,
+textarea:focus
+div:focus {
+    outline: none;
+}
+
+// 去除firefox文本框有required属性时默认添加的粉红小边框
+   input[required]:invalid,
+   input:focus:invalid,
+   textarea[required]:invalid,
+   textarea:focus:invalid {
+       box-shadow: none;
+   }
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    color: $colorMoreLightGrey;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea {
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', STHeiTi, 'Helvetica Neue', 'San Fransico', Helvetica, Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+.clearfix::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: '';
+    clear: both;
+    height: 0;
+}
+
+
+h1{text-align: center;font-size: 2rem;}
+
+
+dl{
+    margin: 20px auto;
+    width: 800px;
+    color: #fff;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 30px 0;
+}
+
+
+dt{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+dd li{
+    margin: 10px 0;
+}
+
+.layout-float{
+    overflow: hidden;
+}
+
+.layout-float .fl{
+    width: 300px;
+    background-color: blue;
+    float: left;
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+    border-right: 5px solid #fff;
+}
+
+.layout-float .fr{
+    width: 100%;
+    margin-left: -100%;
+    background-color: red;
+    float: right;
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+}
+
+.layout-float .fr .content{
+    margin-left: 300px;
+    padding-left: 15px;
+}
+
+.layout-cell .fl{
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    float: left;
+}
+
+.layout-cell .cell{
+    display: table-cell;
+    background-color: red;
+    width: 999px;
+}
+
+.layout-cell .cell .content{
+    min-height: 100px;
+
+}
+
+.layout-position{
+    position: relative;
+}
+
+.layout-position .absolute{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height:100px;
+    background-color: blue;
+}
+
+.layout-position .content{
+    background-color: red;
+    padding-left: 200px;
+    min-height: 100px;
+}
+
+.layout-float .f1{
+    float: left;
+    width: 200px;
+    background-color: red;
+}
+
+.layout-float .f2{
+    float: right;
+    width: 100%;
+    margin-left: -100%;
+    background-color: green;
+
+}
+
+.layout-float .f2 .content{
+    margin: 0 200px;
+}
+
+.layout-float .f3{
+    float: right;
+    width: 200px;
+    background-color: blue;
+}
+
+
+.layout-cell .f1{
+    float: left;
+    width: 200px;
+    background-color: red;
+}
+
+.layout-cell .f2{
+    display: table-cell;
+    width: 999px;
+    background-color: green;
+    margin: 0 200px;
+}
+
+.layout-cell .f3{
+    float: right;
+    width: 200px;
+    background-color: blue;
+}
+
+.layout-position .f1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    background-color: red;
+}
+
+.layout-position .f2{
+    background-color: green;
+    margin: 0 200px;
+}
+
+.layout-position .f3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    background-color: blue;
+}
+
+.layout-float.list{
+    margin: -10px 0 0 -10px;
+}
+
+.layout-float .item{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: blue;
+}
+
+.layout-inline.list{
+    font-size: 0;
+}
+
+.layout-inline .item{
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    background-color: red;
+    vertical-align: top;
+    font-size: 12px;
+    border: 1px solid #000;
+}

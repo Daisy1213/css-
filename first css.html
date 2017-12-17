@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./first.css">
+
+</head>
+<body>
+<dl>
+    <dt>两栏布局</dt>
+    <dd>
+        <ul>
+            <li class="clearfix layout-float">
+                <div class="fr">
+                    <div class="content">
+                        float:right;我是右区块，而且我也不知道我的高度，我是右区块，而且我也不知道我的高度我是右区块，而且我也不知道我的高度我是右区块，而且我也不知道我的高度
+                    </div>
+                </div>
+                <div class="fl">float:left;我是左区块，我的高度也是自适应的，</div>
+            </li>
+            <li class="layout-cell">
+                <div class="fl">float:left; 我是左区块</div>
+                <div class="cell">
+                    <div class="content">display:table-cell; 我是右区块我是右区块我是右区块我是右区块我是右区块我是右区块我是右区块我是右区块我是右区块</div>
+                </div>
+            </li>
+            <li class="layout-position">
+                <div class="absolute">position:absolute; 我是左区块</div>
+                <div class="content"> 我是右区块我是右区块我是右区块我是右区块我是右区块我是右区块我是右区块我是右区块我是右区块</div>
+            </li>
+        </ul>
+    </dd>
+</dl>
+<dl>
+    <dt>三栏布局</dt>
+    <dd>
+        <ul>
+            <li class="clearfix layout-float">
+                <div class="f2">
+                    <div class="content">二二二float:right;</div>
+                </div>
+                <div class="f1">一一一float:left;</div>
+                <div class="f3">三三三float:left;</div>
+            </li>
+            <li class="layout-cell">
+                <div class="f1">float:left; 我是左区块</div>
+                <div class="f3">float:right; 我是右区块</div>
+                <div class="f2">
+                    <div class="content">display:table-cell; 我是中间区块</div>
+                </div>
+
+            </li>
+            <li class="clearfix layout-position">
+                <div class="f1">一一一position:absolute;</div>
+                <div class="f2">
+                    二二二
+                </div>
+                <div class="f3">三三三position:absolute;</div>
+            </li>
+        </ul>
+    </dd>
+</dl>
+<dl>
+    <dt>列表</dt>
+    <dd>
+        <ul>
+            <li class="clearfix layout-float list">
+                <div class="item">列表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项</div>
+            </li>
+            <li class="layout-inline list">
+                <div class="item">列表项</div>
+                <div class="item">列表项列表项列表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项列表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项列表项列表项列表项列列表项列表项列表项列表项列表项列表项列表项列表项列表项列表项列表项列表项列表项列表项列表项表项</div>
+                <div class="item">列表项</div>
+                <div class="item">列表项</div>
+            </li>
+        </ul>
+    </dd>
+</dl>
+</body>
+</html>
